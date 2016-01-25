@@ -10,6 +10,7 @@ appreciate it if you will cite them in your medium of output,
 e.g. papers, code, your very own blog. :)
 
 If you find a bug in my code or have suggestions for making
-the code better and simpler, please let me know. Thank you!
+the code better and simpler, please let me know.
+
 
 Isaac,
