@@ -5,13 +5,13 @@
 %    winning a game of craps. It then displays the following values to the
 %    user: the exact and approximate probabilities, and the relative error
 %    between these two values.
-%  
+%    
 %  Instructions:
 %    
 %    Type the following onto Matlab's command window:
 %    
 %    craps()
-%  
+%    
 %--------------------------------------------------------------------------
 function craps()
     clc;
@@ -96,7 +96,7 @@ function craps()
     p_approx = numWins / N;
     
     % Calculate the relative error of the approximate probability
-    relative_error = abs((p_exact - p_approx) / p_exact);
+    relative_error = abs((p_approx - p_exact) / p_exact);
     
     
     % Display these messages to the user
