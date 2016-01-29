@@ -6,7 +6,7 @@
 # Reset the number of wins
 numWins <- 0
 
-# Set the number of simulations that we will run
+# Set the number of simulations
 N <- 10^5
 
 
@@ -17,57 +17,57 @@ N <- 10^5
 #--------------------------------------------------------------------------
 for (i in 1 : N)
 {
-  #------------------------------------------------------------------------
-  #  Roll the dice and find their sum
-  #------------------------------------------------------------------------
-  die1 <- sample(1 : 6, 1)
-  die2 <- sample(1 : 6, 1)
-  sum  <- die1 + die2
-  
-  
-  #------------------------------------------------------------------------
-  #  Check if we have a natural
-  #------------------------------------------------------------------------
-  if (sum == 7 || sum == 11)
-  {
-    numWins <- numWins + 1
-  }  
+    #----------------------------------------------------------------------
+    #  Roll the dice and find their sum
+    #----------------------------------------------------------------------
+    die1 <- sample(1 : 6, 1)
+    die2 <- sample(1 : 6, 1)
+    sum  <- die1 + die2
     
-  #------------------------------------------------------------------------
-  #  Check if we have craps
-  #------------------------------------------------------------------------
-  else if (sum == 2 || sum == 3 || sum == 12)
-  {
-    # Do nothing
-  }  
     
-  #----------------------------------------------------------------------
-  #  Otherwise, we roll the dice until we get the initial sum
-  #  or a sum of 7
-  #------------------------------------------------------------------------
-  else
-  {
-    while (TRUE)
+    #----------------------------------------------------------------------
+    #  Check if we have a natural
+    #----------------------------------------------------------------------
+    if (sum == 7 || sum == 11)
     {
-      # Roll the dice and find their sum
-      die1    <- sample(1 : 6, 1)
-      die2    <- sample(1 : 6, 1)
-      sum_new <- die1 + die2
-      
-      if (sum_new == sum)
-      {
         numWins <- numWins + 1
-        
-        break
-      }
-      else if (sum_new == 7)
-      {
-        # Do nothing
-        
-        break
-      }
     }
-  }
+    
+    #----------------------------------------------------------------------
+    #  Check if we have craps
+    #----------------------------------------------------------------------
+    else if (sum == 2 || sum == 3 || sum == 12)
+    {
+        # Do nothing
+    }
+    
+    #----------------------------------------------------------------------
+    #  Otherwise, we roll the dice until we get the initial sum
+    #  or a sum of 7
+    #----------------------------------------------------------------------
+    else
+    {
+        while (TRUE)
+        {
+            # Roll the dice and find their sum
+            die1    <- sample(1 : 6, 1)
+            die2    <- sample(1 : 6, 1)
+            sum_new <- die1 + die2
+            
+            if (sum_new == sum)
+            {
+                numWins <- numWins + 1
+                
+                break
+            }
+            else if (sum_new == 7)
+            {
+                # Do nothing
+                
+                break
+            }
+        }
+    }
 }
 
 

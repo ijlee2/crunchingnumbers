@@ -10,7 +10,7 @@ import random
 # Reset the number of wins
 numWins = 0
 
-# Set the number of simulations that we will run
+# Set the number of simulations
 N = 10**5
 
 
