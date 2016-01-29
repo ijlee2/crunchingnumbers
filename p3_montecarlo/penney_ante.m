@@ -1,3 +1,21 @@
+%--------------------------------------------------------------------------
+%  Author:
+%    
+%    Isaac J. Lee (crunchingnumbers.live)
+%    
+%  Summary:
+%    
+%    This program uses Monte Carlo simulation to estimate the chance that
+%    Player 2 wins Penney's game over 3-grams. It displays probabilities
+%    over all possible combinations of choices as a table to the user.
+%    
+%  Instructions:
+%    
+%    Type the following onto Matlab's command window:
+%    
+%    penney_ante()
+%    
+%--------------------------------------------------------------------------
 function penney_ante()
     clc;
     
@@ -13,8 +31,8 @@ function penney_ante()
     % Number of all possible 3-grams (n = 2^3)
     n = length(three_grams);
     
-    % A double array of probabilities of winning the game; each row (i)
-    % corresponds to the opponent's choice, and each column (j) to ours
+    % Probabilities that Player 2 wins the game; each row (i) corresponds
+    % to Player 1's choice, and each column (j) to Player 2's
     p_array = zeros(n, n);
     
     
@@ -25,7 +43,7 @@ function penney_ante()
     %----------------------------------------------------------------------
     for i = 1 : n
         for j = 1 : n
-            % Calculate the probability of winning Penney-ante
+            % Calculate the probability that Player 2 wins Penney-ante
             if (j ~= i)
                 p_array(i, j) = calculate_probability(three_grams{i}, three_grams{j});
             end
@@ -38,22 +56,22 @@ function penney_ante()
     %   Display the results
     % ---------------------------------------------------------------------
     %----------------------------------------------------------------------
-    % For aesthetics, we use a table to display the probabilities. A table
-    % also allows us to print row and column labels easily.
+    % For aesthetics, we use a table to display the probabilities. This
+    % allows us to print the row and column labels easily.
     p_table = array2table(p_array, 'RowNames', three_grams, 'VariableNames', three_grams);
     
-    % Given the opponent's choice, find which of our choices results in
-    % the highest probability of winning
+    % For each Player 1's choice, find which of Player 2's choices gives
+    % him the highest probability of winning
     [~, index] = max(p_array, [], 2);
     
-    % Display our optimal strategy as an additional column
+    % Display Player 2's optimal strategy as an additional column
     p_table.OptimalStrategy = three_grams(index)
 end
 
 
 %--------------------------------------------------------------------------
-%  Perform a Monte Carlo simulation to find the probability of winning
-%  a game of Penney-ante
+%  Perform a Monte Carlo simulation to estimate the probability that
+%  Player 2 wins Penney-ante
 %--------------------------------------------------------------------------
 function p = calculate_probability(player1_choice, player2_choice)
     %----------------------------------------------------------------------
@@ -86,10 +104,10 @@ function p = calculate_probability(player1_choice, player2_choice)
         %------------------------------------------------------------------
         %  Check if either player has won
         %------------------------------------------------------------------
-        if (strcmp(three_gram, player2_choice))
+        if (strcmp(player2_choice, three_gram))
             numWins = numWins + 1;
             
-        elseif (strcmp(three_gram, player1_choice))
+        elseif (strcmp(player1_choice, three_gram))
             % Do nothing
             
         else
@@ -99,12 +117,12 @@ function p = calculate_probability(player1_choice, player2_choice)
                 three_gram(2) = three_gram(3);
                 three_gram(3) = coin(randi(2));
                 
-                if (strcmp(three_gram, player2_choice))
+                if (strcmp(player2_choice, three_gram))
                     numWins = numWins + 1;
                     
                     break;
                     
-                elseif (strcmp(three_gram, player1_choice))
+                elseif (strcmp(player1_choice, three_gram))
                     % Do nothing
                     
                     break;
