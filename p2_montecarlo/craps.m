@@ -1,4 +1,8 @@
 %--------------------------------------------------------------------------
+%  Author:
+%    
+%    Isaac J. Lee (crunchingnumbers.live)
+%    
 %  Summary:
 %    
 %    This program uses Monte Carlo simulation to approximate the chance of
@@ -58,8 +62,8 @@ function craps()
             
             
         %------------------------------------------------------------------
-        %  Otherwise, we roll the dice until we get the initial sum
-        %  or a sum of 7
+        %  Otherwise, we roll the dice until we get the initial sum or a
+        %  sum of 7
         %------------------------------------------------------------------
         else
             while (true)
