@@ -5,9 +5,9 @@
 %    
 %  Summary:
 %    
-%    This program uses Monte Carlo simulation to estimate the probability
-%    that a needle intersects a horizontal line. It returns an estimate of
-%    pi and shows where the first 300 needles are on the paper.
+%    This program uses Monte Carlo simulation to find the probability
+%    that a needle intersects a line. It returns the probability, an
+%    estimate of pi, and a plot of the first 300 needles on the paper.
 %    
 %  Instructions:
 %    
@@ -46,10 +46,10 @@ function buffons_needle()
     x2 = x1 + cos(theta);
     y2 = y1 + sin(theta);
     
-    % Check if a needle intersected a horizontal line
+    % Check if a needle intersects a line
     criterion = (ceil(min(y1, y2)) == floor(max(y1, y2)));
     
-    % Count how many needles intersected a horizontal line
+    % Count how many needles intersect a line
     numWins = sum(criterion);
     
     
@@ -58,11 +58,11 @@ function buffons_needle()
     %   Display the results
     % ---------------------------------------------------------------------
     %----------------------------------------------------------------------
-    % Probability that a needle intersects a horizontal line
+    % Return the probability that a needle intersects a line
     p = numWins / N;
     fprintf('The probability that a needle intersects a line is approximately %.5f.\n\n', p);
     
-    % We can approximate the value of pi
+    % Approximate the value of pi
     fprintf('pi is approximately %.5f.\n\n', 2/p);
     
     
