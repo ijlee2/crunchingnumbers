@@ -19,6 +19,7 @@ function vla_matrix_norm(~, ~, callerName)
     global matrices norms;
     global matrixIndex normIndex;
     global handle_gui;
+    global handle_title;
     global handle_plot;
     global handle_field_norm field_norm;
     
@@ -50,12 +51,20 @@ function vla_matrix_norm(~, ~, callerName)
     
     A = eval(matrices{matrixIndex});
     
-    handle_plot.windowLocation = [0.06 0.15 0.46 0.70];
-    handle_plot.windowCenter   = [0.06 0.15] + 0.5 * [0.46 0.70];
+    handle_plot.windowLocation = [0.06 0.13 0.45 0.68];
+    handle_plot.windowCenter   = [0.06 0.13] + 0.5 * [0.45 0.68];
     handle_plot.windowSize     = 1.25 * max(norm(A, 'inf'), 1);
     
     % Reset field values
     field_norm = 0;
+    
+    
+    %----------------------------------------------------------------------
+    % ---------------------------------------------------------------------
+    %   Set the title
+    % ---------------------------------------------------------------------
+    %----------------------------------------------------------------------
+    set(handle_title, 'String', 'Matrix norm');
     
     
     %----------------------------------------------------------------------
@@ -88,7 +97,7 @@ function vla_matrix_norm(~, ~, callerName)
     %  Set plotting parameters
     %----------------------------------------------------------------------
     % Set the title and axis labels
-    title('Click and drag on this plot window!', 'FontSize', 20);
+    title('Click and drag on this plot window!', 'FontSize', 19);
     
     xlabel('x_{1}'     , 'FontSize', 22);
     ylabel('x_{2}     ', 'FontSize', 22, 'Rotation', 0);
@@ -117,7 +126,7 @@ function vla_matrix_norm(~, ~, callerName)
     handle_rightPanel = ...
     uipanel('Title'                , '', ...
             'TitlePosition'        , 'lefttop', ...
-            'Position'             , [0.55 0.15 0.36 0.70], ...
+            'Position'             , [0.54 0.13 0.36 0.68], ...
             'BackgroundColor'      , backgroundColor, ...
             'BorderType'           , 'beveledin', ...
             'ForegroundColor'      , [0.00 0.00 0.00], ...
@@ -199,7 +208,7 @@ function vla_matrix_norm(~, ~, callerName)
               'Style'              , 'text', ...
               'String'             , 'Find me!', ...
               'Units'              , 'normalized', ...
-              'Position'           , [0.02 0.06 0.38 0.08], ...
+              'Position'           , [0.02 0.06 0.75 0.08], ...
               'BackgroundColor'    , [0.86 0.84 0.86], ...
               'ForegroundColor'    , [0.50 0.10 0.10], ...
               'FontName'           , 'courier', ...

@@ -20,6 +20,7 @@ function vla_singular_values(~, ~, callerName)
     global matrices;
     global matrixIndex;
     global handle_gui;
+    global handle_title;
     global handle_plot;
     global handle_field_angle;
     global handle_field_singular_values;
@@ -51,9 +52,17 @@ function vla_singular_values(~, ~, callerName)
     
     A = eval(matrices{matrixIndex});
     
-    handle_plot.windowLocation = [0.06 0.15 0.46 0.70];
-    handle_plot.windowCenter   = [0.06 0.15] + 0.5 * [0.46 0.70];
+    handle_plot.windowLocation = [0.06 0.13 0.45 0.68];
+    handle_plot.windowCenter   = [0.06 0.13] + 0.5 * [0.45 0.68];
     handle_plot.windowSize     = 1.25 * max(norm(A, 'inf'), 1);
+    
+    
+    %----------------------------------------------------------------------
+    % ---------------------------------------------------------------------
+    %   Set the title
+    % ---------------------------------------------------------------------
+    %----------------------------------------------------------------------
+    set(handle_title, 'String', 'Singular value decomposition');
     
     
     %----------------------------------------------------------------------
@@ -88,7 +97,7 @@ function vla_singular_values(~, ~, callerName)
     %  Set plotting parameters
     %----------------------------------------------------------------------
     % Set the title and axis labels
-    title('Click and drag on this plot window!', 'FontSize', 20);
+    title('Click and drag on this plot window!', 'FontSize', 19);
     
     xlabel('x_{1}'     , 'FontSize', 22);
     ylabel('x_{2}     ', 'FontSize', 22, 'Rotation', 0);
@@ -117,7 +126,7 @@ function vla_singular_values(~, ~, callerName)
     handle_rightPanel = ...
     uipanel('Title'                , '', ...
             'TitlePosition'        , 'lefttop', ...
-            'Position'             , [0.55 0.15 0.36 0.70], ...
+            'Position'             , [0.54 0.13 0.36 0.68], ...
             'BackgroundColor'      , backgroundColor, ...
             'BorderType'           , 'beveledin', ...
             'ForegroundColor'      , [0.00 0.00 0.00], ...
