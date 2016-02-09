@@ -112,6 +112,16 @@ how_big_is_my_heart <- function()
 
 
 #--------------------------------------------------------------------------
+#  Use our model to predict the area of the heart
+#--------------------------------------------------------------------------
+calculate_area_model <- function(r, a)
+{
+    # Return the area of the heart
+    return(pi * r^2 + 0.501 * r * a + 3*pi/512 * a^2)
+}
+
+
+#--------------------------------------------------------------------------
 #  Perform a Monte Carlo simulation to find the area of the heart
 #--------------------------------------------------------------------------
 calculate_area <- function(r, a, N)
@@ -131,14 +141,4 @@ calculate_area <- function(r, a, N)
     
     # Return the area of the heart
     return((2*L)^2 * (numWins / N))
-}
-
-
-#--------------------------------------------------------------------------
-#  Use our model to predict the area of the heart
-#--------------------------------------------------------------------------
-calculate_area_model <- function(r, a)
-{
-    # Return the area of the heart
-    return(pi * r^2 + 0.501 * r * a + 3*pi/512 * a^2)
 }

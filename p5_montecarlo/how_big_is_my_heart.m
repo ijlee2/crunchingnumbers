@@ -40,6 +40,9 @@ function how_big_is_my_heart()
     % Set the radius and the ear length
     [r, a] = meshgrid(0 : 2 : n, 0 : 2 : n);
     
+    r_length = size(r, 2);
+    a_length = size(a, 1);
+    
     % Find the area of our heart predicted by our model
     area_approx = model(r, a);
     
@@ -50,10 +53,10 @@ function how_big_is_my_heart()
     % ---------------------------------------------------------------------
     %----------------------------------------------------------------------
     % Find the area of our heart from Monte Carlo simulation ("exact")
-    area_exact = zeros(size(a));
+    area_exact = zeros(a_length, r_length);
     
-    for j = 1 : size(area_exact, 2)
-        for i = 1 : size(area_exact, 1)
+    for j = 1 : r_length
+        for i = 1 : a_length
             % Run more simulations for larger radius
             N = floor(10^4 * (1 + log(1 + r(i, j)*a(i, j))));
             
@@ -131,8 +134,8 @@ function A = calculate_area(r, a, N)
     L = max(1.5*r, 0.25*a);
     
     % Generate N points in the box
-    x = (2*L)*rand(1, N) - L;
-    y = (2*L)*rand(1, N) - L;
+    x = (2*L) * rand(1, N) - L;
+    y = (2*L) * rand(1, N) - L;
     
     % Check if a point is inside the heart
     criterion = ((x.^2 + y.^2 - r^2).^3 - a * x.^2 .* y.^3 <= 0);
