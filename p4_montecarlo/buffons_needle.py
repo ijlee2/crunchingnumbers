@@ -81,6 +81,6 @@ def buffons_needle():
     plt.yticks(range(12))
     
     plt.gca().yaxis.grid(True)
-        
+    
     plt.show()
 #end
