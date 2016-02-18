@@ -194,6 +194,11 @@ end
 % -------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 function newWorkspace(~, ~)
+    global handle_gui;
+    
+    set(handle_gui, 'WindowButtonDownFcn', '', ...
+                    'WindowButtonUpFcn'  , '');
+    
     drawGUI();
 end
 
