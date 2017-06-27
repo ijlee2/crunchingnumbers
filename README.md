@@ -1,5 +1,5 @@
 # crunchingnumbers.live
-Hi and welcome to the GitHub area for my blog.
+Hi and welcome to the GitHub page for my blog.
 
 The code that I provide complement my blog posts. I hope
 that you find them useful in learning math and building
