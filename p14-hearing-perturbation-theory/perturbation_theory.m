@@ -136,7 +136,7 @@ function perturbation_theory(encryptionOption, noiseOption)
     end
     
     % Change the solution matrix to a vector
-	x = reshape(X, n, 1);
+    x = reshape(X, n, 1);
     
     % Find the relative error between the true and obtained solutions
     relativeError = norm(x - x_true) / norm(x_true);
@@ -230,7 +230,7 @@ function perturbation_theory(encryptionOption, noiseOption)
     
     %----------------------------------------------------------------------
     %  Play the decrypted audio file
-	%----------------------------------------------------------------------
+    %----------------------------------------------------------------------
     sound(x, sampleRate);
     
     % Save the audio and plot
