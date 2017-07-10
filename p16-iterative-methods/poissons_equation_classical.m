@@ -283,23 +283,17 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             Q = (1/omega - 1) * diag(diag(K)) - triu(K,  1);
             
             for k = 1 : numIterations
-                % On odd iterations,
-                if (mod(k, 2) == 1)
-                    % Natural ordering
-                    u_vec = reshape(flipud(u(2:(N + 1), 2:(N + 1)))', N^2, 1);
-                    f_vec = reshape(flipud(f(2:(N + 1), 2:(N + 1)))', N^2, 1);
-                    
-                    u(2:(N + 1), 2:(N + 1)) = fliplr(reshape(flipud(P \ (Q*u_vec + h^2*f_vec)), N, N)');
-                    
-                % On even iterations,
-                else
-                    % Reverse ordering
-                    u_vec = flipud(reshape(flipud(u(2:(N + 1), 2:(N + 1)))', N^2, 1));
-                    f_vec = flipud(reshape(flipud(f(2:(N + 1), 2:(N + 1)))', N^2, 1));
-                    
-                    u(2:(N + 1), 2:(N + 1)) = fliplr(reshape(flipud(P \ (Q*u_vec + h^2*f_vec)), N, N)');
-                    
-                end
+                % Natural ordering
+                u_vec = reshape(flipud(u(2:(N + 1), 2:(N + 1)))', N^2, 1);
+                f_vec = reshape(flipud(f(2:(N + 1), 2:(N + 1)))', N^2, 1);
+                
+                u(2:(N + 1), 2:(N + 1)) = fliplr(reshape(flipud(P \ (Q*u_vec + h^2*f_vec)), N, N)');
+                
+                % Reverse ordering
+                u_vec = flipud(reshape(flipud(u(2:(N + 1), 2:(N + 1)))', N^2, 1));
+                f_vec = flipud(reshape(flipud(f(2:(N + 1), 2:(N + 1)))', N^2, 1));
+                
+                u(2:(N + 1), 2:(N + 1)) = fliplr(reshape(flipud(P \ (Q*u_vec + h^2*f_vec)), N, N)');
                 
                 % Compute the l2 error
                 if (k == 1 || (~graphSolution && mod(k, numIterations_checkpoint) == 0) || k == numIterations)
