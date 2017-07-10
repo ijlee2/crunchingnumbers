@@ -19,10 +19,17 @@ function driver()
     clc;
     close all;
     
-    % Number of points along each axis
+    
+    %----------------------------------------------------------------------
+    %  Initialize the problem
+    %----------------------------------------------------------------------
+    % Set the number of points along each axis
     N = 200;
     
-    % Labels for method names
+    % Find the exact solution to the discrete Poisson's equation
+    find_exact_solution(N);
+    
+    % Set labels for method names
     methodNames = {'Exact'; 'Jacobi'; 'Gauss-Seidel'; 'SOR'; 'SSOR'};
     
     
@@ -33,7 +40,6 @@ function driver()
     %   and compare the results after 100 iterations
     % ---------------------------------------------------------------------
     %----------------------------------------------------------------------
-    % Number of iterations
     numIterations = 100;
     
     fprintf('Here are the l2 errors after %d iterations:\n\n', numIterations);
@@ -41,7 +47,7 @@ function driver()
     for i = 1 : 5
         l2_errors = poissons_equation_classical(methodNames{i}, N, numIterations, true);
         
-        fprintf('%s: %11.4f\n', methodNames{i}, l2_errors(end));
+        fprintf('%s: %.4f\n', methodNames{i}, l2_errors(end));
     end
     
     fprintf('\n');
@@ -79,10 +85,10 @@ function driver()
            'PaperPosition'    , [0 0 800 600], ...
            'PaperPositionMode', 'auto');
     
-    h = plot(numIterations, log(l2_errors(1, :)), '-o', ...
-             numIterations, log(l2_errors(2, :)), '-o', ...
-             numIterations, log(l2_errors(3, :)), '-o', ...
-             numIterations, log(l2_errors(4, :)), '-o', ...
+    h = plot(numIterations, log10(l2_errors(1, :)), '-o', ...
+             numIterations, log10(l2_errors(2, :)), '-o', ...
+             numIterations, log10(l2_errors(3, :)), '-o', ...
+             numIterations, log10(l2_errors(4, :)), '-o', ...
              'LineWidth', 3.5, 'MarkerSize', 10);
     
     h(1).Color = [0.10, 0.10, 0.10];
@@ -98,15 +104,15 @@ function driver()
     set(gca, 'FontSize', 28, ...
              'XTick', linspace(0, 500, 11), ...
              'XTickLabel', {'0', '', '100', '', '200', '', '300', '', '400', '', '500'}, ...
-             'YTick', linspace(-2, 5, 8));
+             'YTick', linspace(-15, 3, 7));
     
     grid on;
     
     title('Convergence', 'FontSize', 48);
-    axis([0 500 -2 5]);
+    axis([0 500 -15 3]);
     
     xlabel('number of iterations'  , 'FontSize', 32);
-    ylabel('l^{2} error (ln scale)', 'FontSize', 32);
+    ylabel('error (log10)', 'FontSize', 32);
     
     legend(methodNames(2 : 5), 'FontSize', 26, 'Location', 'southwest');
     

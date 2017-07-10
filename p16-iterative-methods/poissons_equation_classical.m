@@ -11,7 +11,7 @@
 %      -u_{xx} - u_{yy} = f(x, y),  in (0, L) x (0, L)
 %      
 %      u(x, y) = 0,                 on x = 0, x = L, y = 0, y = L
-%      
+%    
 %  Instructions:
 %    
 %    Type the following onto Matlab's command window:
@@ -68,41 +68,25 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
     
     
     %----------------------------------------------------------------------
-    %  Evaluate the exact solution u_exact and the data f at all points.
-    %  Note that we do not actually use the values of f on the boundary,
-    %  i.e. when i or j is equal to 1 or (N + 2).
+    %  Load the exact solution
+    %----------------------------------------------------------------------
+    load('./exact_solution.mat', 'u_exact');
+    
+    
+    %----------------------------------------------------------------------
+    %  Evaluate the RHS function f at all points. Note, we do not actually
+    %  use the values of f on the boundary.
     %----------------------------------------------------------------------
     a_normalized = a/L * pi;
     b_normalized = b/L * pi;
     
-    u_fcn = @(x, y) sin(a_normalized * x) .* sin(b_normalized * y);
     f_fcn = @(x, y) (a_normalized^2 + b_normalized^2) * sin(a_normalized * x) .* sin(b_normalized * y);
     
     % Find x- and y-coordinates of all points
     [X, Y] = meshgrid(0 : h : L, 0 : h : L);
     
-    % Evaluate u_exact and f at the points
-    u_exact = u_fcn(X, Y);
-    f       = f_fcn(X, Y);
-    
-    
-    
-    %----------------------------------------------------------------------
-    % ---------------------------------------------------------------------
-    %   Perform a finite difference method
-    % ---------------------------------------------------------------------
-    %----------------------------------------------------------------------
-    % Comment the next two lines once the four iterative methods have been
-    % re-implemented. Matlab halts when forming K for large N.
-    %{
-    % Discrete Laplace operator for 1D Poisson's equation
-    K1 = diag(-1 * ones(N - 1, 1), -1) ...
-       + diag( 2 * ones(N    , 1),  0) ...
-       + diag(-1 * ones(N - 1, 1),  1);
-    
-    % Discrete Laplace operator for 2D Poisson's equation
-    K  = kron(eye(N), K1) + kron(K1, eye(N));
-    %}
+    % Evaluate f at the points
+    f = f_fcn(X, Y);
     
     
     %----------------------------------------------------------------------
@@ -123,10 +107,27 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
     count = 1;
     
     
+    
+    %----------------------------------------------------------------------
+    % ---------------------------------------------------------------------
+    %   Perform a finite difference method
+    % ---------------------------------------------------------------------
+    %----------------------------------------------------------------------
+    % Comment the next two lines once the four iterative methods have been
+    % re-implemented. Matlab halts when forming K for large N.
+    %{
+    % Discrete Laplace operator for 1D Poisson's equation
+    K1 = diag(-1 * ones(N - 1, 1), -1) ...
+       + diag( 2 * ones(N    , 1),  0) ...
+       + diag(-1 * ones(N - 1, 1),  1);
+    
+    % Discrete Laplace operator for 2D Poisson's equation
+    K  = kron(eye(N), K1) + kron(K1, eye(N));
+    %}
+    
     switch methodName
         case 'Exact'
             u = u_exact;
-            
             
         case 'Jacobi'
             %{
@@ -150,7 +151,7 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             end
             %}
             
-            % Smart approach
+            % Set temporary variable
             uNew = zeros(N + 2);
             
             for k = 1 : numIterations
@@ -161,6 +162,7 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
                     end
                 end
                 
+                % Update iterate
                 u = uNew;
                 
                 % Compute the l2 error
@@ -170,7 +172,6 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
                     count = count + 1;
                 end
             end
-            
             
         case 'Gauss-Seidel'
             %{
@@ -194,12 +195,22 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             end
             %}
             
-            % Smart approach
             for k = 1 : numIterations
-                % Natural ordering
+                % Red points
                 for j = 2 : (N + 1)
                     for i = 2 : (N + 1)
-                        u(i, j) = (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        if (mod(i + j, 2) == 0)
+                            u(i, j) = (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        end
+                    end
+                end
+                
+                % Black points
+                for j = 2 : (N + 1)
+                    for i = 2 : (N + 1)
+                        if (mod(i + j, 2) == 1)
+                            u(i, j) = (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        end
                     end
                 end
                 
@@ -210,7 +221,6 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
                     count = count + 1;
                 end
             end
-            
             
         case 'SOR'
             %{
@@ -235,14 +245,25 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             end
             %}
             
-            % Smart approach
+            % Set weight
             omega = 2 / (1 + sin(h*pi));
             
             for k = 1 : numIterations
-                % Natural ordering
+                % Red points
                 for j = 2 : (N + 1)
                     for i = 2 : (N + 1)
-                        u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        if (mod(i + j, 2) == 0)
+                            u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        end
+                    end
+                end
+                
+                % Black points
+                for j = 2 : (N + 1)
+                    for i = 2 : (N + 1)
+                        if (mod(i + j, 2) == 1)
+                            u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                        end
                     end
                 end
                 
@@ -254,10 +275,9 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
                 end
             end
             
-            
         case 'SSOR'
             %{
-            % Naive approach
+            % Naive approach (w/o Chebyshev acceleration)
             omega = 2 / (1 + sin(h*pi));
             P = (1/omega    ) * diag(diag(K)) + tril(K, -1);
             Q = (1/omega - 1) * diag(diag(K)) - triu(K,  1);
@@ -290,29 +310,66 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             end
             %}
             
-            % Smart approach
-            omega = 2 / (1 + sin(h*pi));
+            % Set weight
+            omega = 2 / (1 + sqrt(2 - 2*cos(h*pi)));
             
-            for k = 1 : numIterations
-                % On odd iterations,
-                if (mod(k, 2) == 1)
-                    % Natural ordering
-                    for j = 2 : (N + 1)
-                        for i = 2 : (N + 1)
-                            u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
-                        end
-                    end
-                    
-                % On even iterations,
-                else
-                    % Reverse ordering
-                    for j = (N + 1) : -1 : 2
-                        for i = (N + 1) : -1 : 2
-                            u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
-                        end
-                    end
-                    
+            % Set temporary variables
+            rho = 1 - pi/(2*N);
+            mu0 = 1;
+            mu1 = rho;
+            
+            
+            %--------------------------------------------------------------
+            %  Perform the first iteration
+            %--------------------------------------------------------------
+            % Set initial guesses
+            u0 = u;
+            u1 = u0;
+            
+            % Natural ordering
+            for j = 2 : (N + 1)
+                for i = 2 : (N + 1)
+                    u1(i, j) = (1 - omega) * u1(i, j) + omega * (u1(i - 1, j) + u1(i + 1, j) + u1(i, j - 1) + u1(i, j + 1) + h^2*f(i, j)) / 4;
                 end
+            end
+            
+            % Reverse ordering
+            for j = (N + 1) : -1 : 2
+                for i = (N + 1) : -1 : 2
+                    u1(i, j) = (1 - omega) * u1(i, j) + omega * (u1(i - 1, j) + u1(i + 1, j) + u1(i, j - 1) + u1(i, j + 1) + h^2*f(i, j)) / 4;
+                end
+            end
+            
+            
+            %--------------------------------------------------------------
+            %  Perform the remaining iterations
+            %--------------------------------------------------------------
+            for k = 2 : numIterations
+                mu = 1 / (2/(rho * mu1) - 1/mu0);
+                u  = u1;
+                
+                % Natural ordering
+                for j = 2 : (N + 1)
+                    for i = 2 : (N + 1)
+                        u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                    end
+                end
+                
+                % Reverse ordering
+                for j = (N + 1) : -1 : 2
+                    for i = (N + 1) : -1 : 2
+                        u(i, j) = (1 - omega) * u(i, j) + omega * (u(i - 1, j) + u(i + 1, j) + u(i, j - 1) + u(i, j + 1) + h^2*f(i, j)) / 4;
+                    end
+                end
+                
+                % Chebyshev acceleration
+                u = 2*mu/(rho*mu1) * u - mu/mu0 * u0;
+                
+                % Update temporary variables
+                mu0 = mu1;
+                mu1 = mu;
+                u0  = u1;
+                u1  = u;
                 
                 % Compute the l2 error
                 if (k == 1 || (~graphSolution && mod(k, numIterations_checkpoint) == 0) || k == numIterations)
@@ -321,6 +378,7 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
                     count = count + 1;
                 end
             end
+        
     end
     
     
