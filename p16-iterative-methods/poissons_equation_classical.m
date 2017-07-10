@@ -278,7 +278,7 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
         case 'SSOR'
             %{
             % Naive approach (w/o Chebyshev acceleration)
-            omega = 2 / (1 + sin(h*pi));
+            omega = 2 / (1 + sqrt(2 - 2*cos(h*pi)));
             P = (1/omega    ) * diag(diag(K)) + tril(K, -1);
             Q = (1/omega - 1) * diag(diag(K)) - triu(K,  1);
             
@@ -345,7 +345,7 @@ function l2_errors = poissons_equation_classical(methodName, N, numIterations, g
             %  Perform the remaining iterations
             %--------------------------------------------------------------
             for k = 2 : numIterations
-                mu = 1 / (2/(rho * mu1) - 1/mu0);
+                mu = 1 / (2/(rho*mu1) - 1/mu0);
                 u  = u1;
                 
                 % Natural ordering
