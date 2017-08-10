@@ -9,11 +9,37 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ## Link to Blog Posts (chronological)
 - [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra/)
+    - [x] Matlab
+    
 - [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps/)
+    - [x] Matlab
+    - [x] Python
+    - [x] R
+    
 - [Monte Carlo Simulations: Penney's Game](https://crunchingnumbers.live/2016/01/28/monte-carlo-simulations-penneys-game/)
+    - [x] Matlab
+    - [x] Python
+    - [x] R
+    
 - [Monte Carlo Simulations: Buffon's Needle](https://crunchingnumbers.live/2016/02/01/monte-carlo-simulations-buffons-needle/)
+    - [x] Matlab
+    - [x] Python
+    - [x] R
+    
 - [Monte Carlo Simulations: How Big Is Your Heart?](https://crunchingnumbers.live/2016/02/05/monte-carlo-simulations-how-big-is-your-heart/)
+    - [x] Matlab
+    - [x] Python
+    - [x] R
+    
 - [Solving Nonograms Using Compressive Sensing](https://crunchingnumbers.live/2016/02/20/solving-nonograms-with-compressive-sensing-part-1/)
+    - [x] Matlab
+    
 - [15 Keywords](https://crunchingnumbers.live/2017/04/01/15-keywords/)
+    - [x] Matlab
+    
 - [Hearing Perturbation Theory](https://crunchingnumbers.live/2017/06/23/hearing-perturbation-theory/)
+    - [x] Matlab
+    
 - [Iterative Methods](https://crunchingnumbers.live/2017/07/01/iterative-methods-part-1/)
+    - [x] Matlab
+    
