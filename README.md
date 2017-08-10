@@ -8,9 +8,6 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Link to Blog Posts (chronological)
-- [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra/)
-    - [x] Matlab
-    
 - [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps/)
     - [x] Matlab
     - [x] Python
@@ -25,6 +22,9 @@ If you have suggestions for making my code better and simpler, please let me kno
     - [x] Matlab
     - [x] Python
     - [x] R
+    
+- [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra/)
+    - [x] Matlab
     
 - [Monte Carlo Simulations: How Big Is Your Heart?](https://crunchingnumbers.live/2016/02/05/monte-carlo-simulations-how-big-is-your-heart/)
     - [x] Matlab
