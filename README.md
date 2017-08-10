@@ -7,7 +7,7 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 
 If you have suggestions for making my code better and simpler, please let me know!
 
-## Table of Contents (chronological)
+## Link to Blog Posts (chronological)
 - [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra/)
 - [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps/)
 - [Monte Carlo Simulations: Penney's Game](https://crunchingnumbers.live/2016/01/28/monte-carlo-simulations-penneys-game/)
