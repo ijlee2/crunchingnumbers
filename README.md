@@ -7,7 +7,7 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 
 If you have suggestions for making my code better and simpler, please let me know!
 
-## Link to Blog Posts (chronological)
+## Link to Blog Posts
 - [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps/)
     - [x] Matlab
     - [x] Python
