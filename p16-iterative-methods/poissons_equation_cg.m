@@ -16,7 +16,7 @@
 %    
 %    Type the following onto Matlab's command window:
 %      
-%      l2_errors = poissons_equation_cg(N)
+%      poissons_equation_cg(N)
 %      
 %    where,
 %      
