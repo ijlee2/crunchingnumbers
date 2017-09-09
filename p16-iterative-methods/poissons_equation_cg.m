@@ -24,7 +24,7 @@
 %    
 %--------------------------------------------------------------------------
 function poissons_equation_cg(N)
-	clc;
+    clc;
     close all;
     
     %----------------------------------------------------------------------
@@ -42,7 +42,7 @@ function poissons_equation_cg(N)
     
     % Termination criterion
     numIterations = 100;
-	tolerance     = 1e-10;
+    tolerance     = 1e-10;
     
     
     %----------------------------------------------------------------------
@@ -70,7 +70,7 @@ function poissons_equation_cg(N)
     % Initialize
     u     = zeros(N + 2);
     r     = h^2 * f;
-	p     = h^2 * f;
+    p     = h^2 * f;
     r_dot = dotProduct(r, r, N);
     
     for k = 1 : numIterations
