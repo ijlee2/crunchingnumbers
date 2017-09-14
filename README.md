@@ -1,3 +1,4 @@
+![crunchingnumbers.live](banner.png?raw=true)
 # crunchingnumbers.live
 Hi and welcome to the GitHub page for my blog.
 
