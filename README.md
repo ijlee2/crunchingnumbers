@@ -1,5 +1,6 @@
-![crunchingnumbers.live](banner.png?raw=true)
 # crunchingnumbers.live
+![crunchingnumbers.live](banner.png?raw=true)
+
 Hi and welcome to the GitHub page for my blog.
 
 The code that I provide complement my blog posts. I hope that you find them useful in learning math and building your own projects.
