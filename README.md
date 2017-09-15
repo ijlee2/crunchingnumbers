@@ -10,6 +10,7 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [Metric and Probability-Based Recommendations](https://crunchingnumbers.live/2017/09/15/metric-and-probability-based-recommendations/)
 - [Iterative Methods](https://crunchingnumbers.live/2017/07/01/iterative-methods-part-1/) ([Part 2](https://crunchingnumbers.live/2017/07/09/iterative-methods-part-2/), [Part 3](https://crunchingnumbers.live/2017/09/08/iterative-methods-part-3/))
 - [Isogeometric Library](https://crunchingnumbers.live/2017/06/27/isogeometric-analysis-library/)
 - [Hearing Perturbation Theory](https://crunchingnumbers.live/2017/06/23/hearing-perturbation-theory/)
