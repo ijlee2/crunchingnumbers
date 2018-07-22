@@ -10,6 +10,8 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [Missing Codepoints](https://crunchingnumbers.live/2018/07/21/missing-codepoints/)
+- [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember/)
 - [Lights Out](https://crunchingnumbers.live/2018/04/07/lights-out/)
 - [Mai Retrospective](https://crunchingnumbers.live/2018/03/25/mai-retrospective/)
 - [Metric and Probability-Based Recommendations](https://crunchingnumbers.live/2017/09/15/metric-and-probability-based-recommendations/)
