@@ -10,6 +10,7 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [How to Conduct a Live Code Interview (with 3 Full Problems)](https://crunchingnumbers.live/2018/09/08/how-to-conduct-a-live-code-interview/)
 - [Missing Codepoints](https://crunchingnumbers.live/2018/07/21/missing-codepoints/)
 - [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember/)
 - [Lights Out](https://crunchingnumbers.live/2018/04/07/lights-out/)
