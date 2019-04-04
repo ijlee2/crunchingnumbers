@@ -10,6 +10,10 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember/)
+- [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough/)
+- [Our New Pathways App](https://crunchingnumbers.live/2018/11/13/our-new-pathways-app/)
+- [Recaps from EmberCamp & JSCamp 2018](https://crunchingnumbers.live/2018/09/23/recaps-from-embercamp-jscamp-2018/)
 - [How to Conduct a Live Code Interview (with 3 Full Problems)](https://crunchingnumbers.live/2018/09/08/how-to-conduct-a-live-code-interview/)
 - [Missing Codepoints](https://crunchingnumbers.live/2018/07/21/missing-codepoints/)
 - [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember/)
