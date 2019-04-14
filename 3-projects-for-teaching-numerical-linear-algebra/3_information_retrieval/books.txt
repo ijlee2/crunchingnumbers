@@ -1,0 +1,25 @@
+Nonlinear Optimization with Financial Applications
+Finite Element Modeling for Stress Analysis
+An Introduction to Mechanics
+Matrices and Linear Transformations
+Partial Differential Equations in Fluid Dynamics
+Statistics Fourth Edition
+Mathematical Control Theory
+Emerging Applications of Algebraic Geometry
+Real and Complex Analysis
+Nonlinear Dynamics and Chaos
+Theory of Nonlinear Acoustics in Fluids
+Distribution Theory and Transform Analysis
+Financial Engineering with Finite Elements
+Linear Algebra Done Right
+Differential Equations Second Edition
+Real Analysis with Economic Applications
+Linear and Nonlinear Structural Mechanics
+An Introduction to Fluid Dynamics
+The Finite Element Methods
+Linear Algebra and Matrix Theory
+Linear and Nonlinear Optimization
+Partial Differential Equations in Mechanics
+The Finite Element Method for Fluid Dynamics
+Linear Algebra Done Right Second Edition
+Statistical Mechanics

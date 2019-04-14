@@ -10,6 +10,7 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- 3 Projects for Teaching Numerical Linear Algebra
 - [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember/)
 - [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough/)
 - [Our New Pathways App](https://crunchingnumbers.live/2018/11/13/our-new-pathways-app/)
