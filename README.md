@@ -10,6 +10,9 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [Topics in Computational Mechanics: Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3/)
+- [Topics in Computational Mechanics: Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2/)
+- [Topics in Computational Mechanics: Part 1](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1/)
 - [3 Projects for Teaching Numerical Linear Algebra](https://crunchingnumbers.live/2019/04/14/3-projects-for-teaching-numerical-linear-algebra/)
 - [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember/)
 - [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough/)
