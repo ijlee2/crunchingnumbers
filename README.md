@@ -10,6 +10,8 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+- [Topics in Computational Mechanics: Part 5](https://crunchingnumbers.live/2019/07/25/topics-in-computational-mechanics-part-5/)
+- [Topics in Computational Mechanics: Part 4](https://crunchingnumbers.live/2019/07/07/topics-in-computational-mechanics-part-4/)
 - [Topics in Computational Mechanics: Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3/)
 - [Topics in Computational Mechanics: Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2/)
 - [Topics in Computational Mechanics: Part 1](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1/)
