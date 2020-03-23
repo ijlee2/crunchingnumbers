@@ -10,6 +10,11 @@ Unless I noted otherwise, I have written all code. I'd much appreciate it if you
 If you have suggestions for making my code better and simpler, please let me know!
 
 ## Blog Posts
+
+- [CI with GitHub Actions for Ember Apps](https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps/)
+- [Prototyping Apps with Ember Octane: Behind the Scenes](https://crunchingnumbers.live/2020/02/03/prototyping-apps-with-ember-octane-behind-the-scenes/)
+- [Finding Books for Prisoners](https://crunchingnumbers.live/2020/01/15/finding-books-for-prisoners/)
+- [Rewriting Apps in Ember Octane](https://crunchingnumbers.live/2019/12/23/rewriting-apps-in-ember-octane/)
 - [Write Tests Like a Mathematician](https://crunchingnumbers.live/2019/08/04/write-tests-like-a-mathematician-part-1/) ([Part 2](https://crunchingnumbers.live/2019/08/06/write-tests-like-a-mathematician-part-2/), [Part 3](https://crunchingnumbers.live/2019/10/11/write-tests-like-a-mathematician-part-3/))
 - [Topics in Computational Mechanics](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1/) ([Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2/), [Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3/), [Part 4](https://crunchingnumbers.live/2019/07/07/topics-in-computational-mechanics-part-4/), [Part 5](https://crunchingnumbers.live/2019/07/25/topics-in-computational-mechanics-part-5/))
 - [3 Projects for Teaching Numerical Linear Algebra](https://crunchingnumbers.live/2019/04/14/3-projects-for-teaching-numerical-linear-algebra/)
