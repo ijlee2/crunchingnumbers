@@ -11,6 +11,7 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ## Blog Posts
 
+- [3 Refactoring Techniques](https://crunchingnumbers.live/2020/08/08/3-refactoring-techniques/)
 - [Container Queries: Cross-Resolution Testing](https://crunchingnumbers.live/2020/06/07/container-queries-cross-resolution-testing/)
 - [Container Queries: Adaptive Images](https://crunchingnumbers.live/2020/06/03/container-queries-adaptive-images/)
 - [Container Queries: Reimagined](https://crunchingnumbers.live/2020/06/01/container-queries-reimagined/)
