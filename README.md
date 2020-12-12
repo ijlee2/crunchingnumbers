@@ -14,6 +14,7 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ### 2020
 
+- [8 Lecture Notes](https://crunchingnumbers.live/2020/12/12/8-lecture-notes/)
 - [CI with GitHub Actions for Ember Apps (Part 2)](https://crunchingnumbers.live/2020/08/31/ci-with-github-actions-for-ember-apps-part-2/)
 - [3 Refactoring Techniques](https://crunchingnumbers.live/2020/08/08/3-refactoring-techniques/)
 - [Container Queries: Cross-Resolution Testing](https://crunchingnumbers.live/2020/06/07/container-queries-cross-resolution-testing/)
