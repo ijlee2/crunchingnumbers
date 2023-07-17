@@ -12,6 +12,11 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ## Blog Posts
 
+### 2023
+
+- In 1 Year
+
+
 ### 2020
 
 - [8 Lecture Notes](https://crunchingnumbers.live/2020/12/12/8-lecture-notes/)
