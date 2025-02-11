@@ -12,9 +12,21 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ## Blog Posts
 
+### 2025
+
+- [Shared Lint Configs](https://crunchingnumbers.live/2025/02/11/shared-lint-configs/)
+
+
+### 2024
+
+- [Moving Mountains](https://crunchingnumbers.live/2024/09/15/moving-mountains/)
+- [CSS Modules + Internationalization for Embroider](https://crunchingnumbers.live/2024/09/09/css-modules-internationalization-for-embroider/)
+- [Fixing Package Dependencies](https://crunchingnumbers.live/2024/07/19/fixing-package-dependencies/)
+
+
 ### 2023
 
-- In 1 Year
+- [In 1 Year](https://crunchingnumbers.live/2023/07/20/in-1-year/)
 
 
 ### 2020
