@@ -14,6 +14,10 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ### 2025
 
+- [Migrating to `<template>` tag](https://crunchingnumbers.live/2025/10/13/migrating-to-template-tag/)
+- [Large-Scale Migrations with Codemods](https://crunchingnumbers.live/2025/09/22/large-scale-migrations-with-codemods/)
+- [It’s Time to Separate: Own or Delegate?](https://crunchingnumbers.live/2025/09/21/its-time-to-separate-own-or-delegate/)
+- [It’s Time to Separate: Lint and Test](https://crunchingnumbers.live/2025/06/14/its-time-to-separate-lint-and-test/)
 - [It’s Time to Separate: Lint and Format](https://crunchingnumbers.live/2025/06/01/its-time-to-separate-lint-and-format/)
 - [An Important Message](https://crunchingnumbers.live/2025/06/01/an-important-message/)
 - [Shared Lint Configs](https://crunchingnumbers.live/2025/02/11/shared-lint-configs/)
