@@ -12,8 +12,15 @@ If you have suggestions for making my code better and simpler, please let me kno
 
 ## Blog Posts
 
+### 2026
+
+- [Responsive Images in Modern Ember](https://crunchingnumbers.live/2026/07/28/responsive-images-in-modern-ember/)
+- [Codemod for Ignoring Lint Errors](https://crunchingnumbers.live/2026/04/27/codemod-for-ignoring-lint-errors/)
+
+
 ### 2025
 
+- [Migrating to glint v2](https://crunchingnumbers.live/2025/11/24/migrating-to-glint-v2/)
 - [Migrating to `<template>` tag](https://crunchingnumbers.live/2025/10/13/migrating-to-template-tag/)
 - [Large-Scale Migrations with Codemods](https://crunchingnumbers.live/2025/09/22/large-scale-migrations-with-codemods/)
 - [It’s Time to Separate: Own or Delegate?](https://crunchingnumbers.live/2025/09/21/its-time-to-separate-own-or-delegate/)
