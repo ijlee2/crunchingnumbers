@@ -1,102 +1,111 @@
 ![crunchingnumbers.live](banner.png?raw=true)
 
 # crunchingnumbers.live
+
 Hi and welcome to the GitHub page for my blog.
 
 The code that I provide complement my blog posts. I hope that you find them useful in learning math and building your own projects.
 
-Unless I noted otherwise, I have written all code. I'd much appreciate it if you cite [my blog](https://crunchingnumbers.live) and code in your medium of output, e.g. papers, code, your very own blog. :)
-
-If you have suggestions for making my code better and simpler, please let me know!
+Unless I noted otherwise, I have written all code. Please cite [my blog](https://crunchingnumbers.live) and code in your work.
 
 
 ## Blog Posts
 
 ### 2026
 
-- [Responsive Images in Modern Ember](https://crunchingnumbers.live/2026/07/28/responsive-images-in-modern-ember/)
-- [Codemod for Ignoring Lint Errors](https://crunchingnumbers.live/2026/04/27/codemod-for-ignoring-lint-errors/)
+- [LSP-ember for Sublime Text](https://crunchingnumbers.live/2026/09/14/lsp-ember-for-sublime-text)
+- [Rescue Me: ember-website](https://crunchingnumbers.live/2026/09/08/rescue-me-ember-website)
+- [Migrating a WordPress Blog with Claude Code](https://crunchingnumbers.live/2026/08/07/migrating-a-wordpress-blog-with-claude-code)
+- [Responsive Images in Modern Ember](https://crunchingnumbers.live/2026/07/28/responsive-images-in-modern-ember)
+- [Codemod for Ignoring Lint Errors](https://crunchingnumbers.live/2026/04/27/codemod-for-ignoring-lint-errors)
 
 
 ### 2025
 
-- [Migrating to glint v2](https://crunchingnumbers.live/2025/11/24/migrating-to-glint-v2/)
-- [Migrating to `<template>` tag](https://crunchingnumbers.live/2025/10/13/migrating-to-template-tag/)
-- [Large-Scale Migrations with Codemods](https://crunchingnumbers.live/2025/09/22/large-scale-migrations-with-codemods/)
-- [It’s Time to Separate: Own or Delegate?](https://crunchingnumbers.live/2025/09/21/its-time-to-separate-own-or-delegate/)
-- [It’s Time to Separate: Lint and Test](https://crunchingnumbers.live/2025/06/14/its-time-to-separate-lint-and-test/)
-- [It’s Time to Separate: Lint and Format](https://crunchingnumbers.live/2025/06/01/its-time-to-separate-lint-and-format/)
-- [An Important Message](https://crunchingnumbers.live/2025/06/01/an-important-message/)
-- [Shared Lint Configs](https://crunchingnumbers.live/2025/02/11/shared-lint-configs/)
+- [Migrating to glint v2](https://crunchingnumbers.live/2025/11/24/migrating-to-glint-v2)
+- [Migrating to `<template>` tag](https://crunchingnumbers.live/2025/10/13/migrating-to-template-tag)
+- [Large-Scale Migrations with Codemods](https://crunchingnumbers.live/2025/09/22/large-scale-migrations-with-codemods)
+- [It’s Time to Separate: Own or Delegate?](https://crunchingnumbers.live/2025/09/21/its-time-to-separate-own-or-delegate)
+- [It’s Time to Separate: Lint and Test](https://crunchingnumbers.live/2025/06/14/its-time-to-separate-lint-and-test)
+- [It’s Time to Separate: Lint and Format](https://crunchingnumbers.live/2025/06/01/its-time-to-separate-lint-and-format)
+- [An Important Message](https://crunchingnumbers.live/2025/06/01/an-important-message)
+- [Shared Lint Configs](https://crunchingnumbers.live/2025/02/11/shared-lint-configs)
 
 
 ### 2024
 
-- [Moving Mountains](https://crunchingnumbers.live/2024/09/15/moving-mountains/)
-- [CSS Modules + Internationalization for Embroider](https://crunchingnumbers.live/2024/09/09/css-modules-internationalization-for-embroider/)
-- [Fixing Package Dependencies](https://crunchingnumbers.live/2024/07/19/fixing-package-dependencies/)
+- [Moving Mountains](https://crunchingnumbers.live/2024/09/15/moving-mountains)
+- [CSS Modules + Internationalization for Embroider](https://crunchingnumbers.live/2024/09/09/css-modules-internationalization-for-embroider)
+- [Fixing Package Dependencies](https://crunchingnumbers.live/2024/07/19/fixing-package-dependencies)
 
 
 ### 2023
 
-- [In 1 Year](https://crunchingnumbers.live/2023/07/20/in-1-year/)
+- [In 1 Year](https://crunchingnumbers.live/2023/07/20/in-1-year)
 
 
 ### 2020
 
-- [8 Lecture Notes](https://crunchingnumbers.live/2020/12/12/8-lecture-notes/)
-- [CI with GitHub Actions for Ember Apps (Part 2)](https://crunchingnumbers.live/2020/08/31/ci-with-github-actions-for-ember-apps-part-2/)
-- [3 Refactoring Techniques](https://crunchingnumbers.live/2020/08/08/3-refactoring-techniques/)
-- [Container Queries: Cross-Resolution Testing](https://crunchingnumbers.live/2020/06/07/container-queries-cross-resolution-testing/)
-- [Container Queries: Adaptive Images](https://crunchingnumbers.live/2020/06/03/container-queries-adaptive-images/)
-- [Container Queries: Reimagined](https://crunchingnumbers.live/2020/06/01/container-queries-reimagined/)
-- [CI with GitHub Actions for Ember Apps](https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps/)
-- [Prototyping Apps with Ember Octane: Behind the Scenes](https://crunchingnumbers.live/2020/02/03/prototyping-apps-with-ember-octane-behind-the-scenes/)
-- [Finding Books for Prisoners](https://crunchingnumbers.live/2020/01/15/finding-books-for-prisoners/)
+- [8 Lecture Notes](https://crunchingnumbers.live/2020/12/12/8-lecture-notes)
+- [CI with GitHub Actions for Ember Apps (Part 2)](https://crunchingnumbers.live/2020/08/31/ci-with-github-actions-for-ember-apps-part-2)
+- [Powering the Together Framework](https://crunchingnumbers.live/2020/08/31/powering-the-together-framework)
+- [3 Refactoring Techniques](https://crunchingnumbers.live/2020/08/08/3-refactoring-techniques)
+- [Container Queries: Cross-Resolution Testing](https://crunchingnumbers.live/2020/06/07/container-queries-cross-resolution-testing)
+- [Container Queries: Adaptive Images](https://crunchingnumbers.live/2020/06/03/container-queries-adaptive-images)
+- [Container Queries: Reimagined](https://crunchingnumbers.live/2020/06/01/container-queries-reimagined)
+- [CI with GitHub Actions for Ember Apps](https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps)
+- [How to Manage Conflicts: Decide](https://crunchingnumbers.live/2020/02/24/how-to-manage-conflicts-decide)
+- [Prototyping Apps with Ember Octane: Behind the Scenes](https://crunchingnumbers.live/2020/02/03/prototyping-apps-with-ember-octane-behind-the-scenes)
+- [Finding Books for Prisoners](https://crunchingnumbers.live/2020/01/15/finding-books-for-prisoners)
 
 
 ### 2019
 
-- [Rewriting Apps in Ember Octane](https://crunchingnumbers.live/2019/12/23/rewriting-apps-in-ember-octane/)
-- [Write Tests Like a Mathematician](https://crunchingnumbers.live/2019/08/04/write-tests-like-a-mathematician-part-1/) ([Part 2](https://crunchingnumbers.live/2019/08/06/write-tests-like-a-mathematician-part-2/), [Part 3](https://crunchingnumbers.live/2019/10/11/write-tests-like-a-mathematician-part-3/))
-- [Topics in Computational Mechanics](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1/) ([Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2/), [Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3/), [Part 4](https://crunchingnumbers.live/2019/07/07/topics-in-computational-mechanics-part-4/), [Part 5](https://crunchingnumbers.live/2019/07/25/topics-in-computational-mechanics-part-5/))
-- [3 Projects for Teaching Numerical Linear Algebra](https://crunchingnumbers.live/2019/04/14/3-projects-for-teaching-numerical-linear-algebra/)
-- [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember/)
-- [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough/)
+- [Rewriting Apps in Ember Octane](https://crunchingnumbers.live/2019/12/23/rewriting-apps-in-ember-octane)
+- [Write Tests Like a Mathematician](https://crunchingnumbers.live/2019/08/04/write-tests-like-a-mathematician-part-1) ([Part 2](https://crunchingnumbers.live/2019/08/06/write-tests-like-a-mathematician-part-2), [Part 3](https://crunchingnumbers.live/2019/10/11/write-tests-like-a-mathematician-part-3))
+- [Topics in Computational Mechanics](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1) ([Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2), [Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3), [Part 4](https://crunchingnumbers.live/2019/07/07/topics-in-computational-mechanics-part-4), [Part 5](https://crunchingnumbers.live/2019/07/25/topics-in-computational-mechanics-part-5))
+- [#EmberJS2019: Build a Larger Community](https://crunchingnumbers.live/2019/05/26/emberjs2019-build-a-larger-community)
+- [Converse with Ease](https://crunchingnumbers.live/2019/05/22/converse-with-ease)
+- [3 Projects for Teaching Numerical Linear Algebra](https://crunchingnumbers.live/2019/04/14/3-projects-for-teaching-numerical-linear-algebra)
+- [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember)
+- [How to Manage Conflicts: Speak](https://crunchingnumbers.live/2019/03/11/how-to-manage-conflicts-speak)
+- [How to Manage Conflicts: Listen](https://crunchingnumbers.live/2019/03/05/how-to-manage-conflicts-listen)
+- [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough)
 
 
 ### 2018
 
-- [Our New Pathways App](https://crunchingnumbers.live/2018/11/13/our-new-pathways-app/)
-- [Recaps from EmberCamp & JSCamp 2018](https://crunchingnumbers.live/2018/09/23/recaps-from-embercamp-jscamp-2018/)
-- [How to Conduct a Live Code Interview (with 3 Full Problems)](https://crunchingnumbers.live/2018/09/08/how-to-conduct-a-live-code-interview/)
-- [Missing Codepoints](https://crunchingnumbers.live/2018/07/21/missing-codepoints/)
-- [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember/)
-- [Lights Out](https://crunchingnumbers.live/2018/04/07/lights-out/)
-- [Mai Retrospective](https://crunchingnumbers.live/2018/03/25/mai-retrospective/)
+- [Our New Pathways App](https://crunchingnumbers.live/2018/11/13/our-new-pathways-app)
+- [Recaps from EmberCamp & JSCamp 2018](https://crunchingnumbers.live/2018/09/23/recaps-from-embercamp-jscamp-2018)
+- [How to Conduct a Live Code Interview (with 3 Full Problems)](https://crunchingnumbers.live/2018/09/08/how-to-conduct-a-live-code-interview)
+- [Missing Codepoints](https://crunchingnumbers.live/2018/07/21/missing-codepoints)
+- [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember)
+- [Lights Out](https://crunchingnumbers.live/2018/04/07/lights-out)
+- [Mai Retrospective](https://crunchingnumbers.live/2018/03/25/mai-retrospective)
+- [Hello JS World!](https://crunchingnumbers.live/2018/01/16/hello-js-world)
 
 
 ### 2017
 
-- [Metric and Probability-Based Recommendations](https://crunchingnumbers.live/2017/09/15/metric-and-probability-based-recommendations/)
-- [Iterative Methods](https://crunchingnumbers.live/2017/07/01/iterative-methods-part-1/) ([Part 2](https://crunchingnumbers.live/2017/07/09/iterative-methods-part-2/), [Part 3](https://crunchingnumbers.live/2017/09/08/iterative-methods-part-3/))
-- [Isogeometric Library](https://crunchingnumbers.live/2017/06/27/isogeometric-analysis-library/)
-- [Hearing Perturbation Theory](https://crunchingnumbers.live/2017/06/23/hearing-perturbation-theory/)
-- [Math in Cross-Stitch](https://crunchingnumbers.live/2017/06/11/math-in-cross-stitch/)
-- [15 Keywords](https://crunchingnumbers.live/2017/04/01/15-keywords/)
-- [Infinite You](https://crunchingnumbers.live/2017/02/06/infinite-you/)
+- [Metric and Probability-Based Recommendations](https://crunchingnumbers.live/2017/09/15/metric-and-probability-based-recommendations)
+- [Iterative Methods](https://crunchingnumbers.live/2017/07/01/iterative-methods-part-1) ([Part 2](https://crunchingnumbers.live/2017/07/09/iterative-methods-part-2), [Part 3](https://crunchingnumbers.live/2017/09/08/iterative-methods-part-3))
+- [Isogeometric Library](https://crunchingnumbers.live/2017/06/27/isogeometric-analysis-library)
+- [Hearing Perturbation Theory](https://crunchingnumbers.live/2017/06/23/hearing-perturbation-theory)
+- [Math in Cross-Stitch](https://crunchingnumbers.live/2017/06/11/math-in-cross-stitch)
+- [15 Keywords](https://crunchingnumbers.live/2017/04/01/15-keywords)
+- [Infinite You](https://crunchingnumbers.live/2017/02/06/infinite-you)
 
 
 ### 2016
 
-- [p@55w0rd$](https://crunchingnumbers.live/2016/11/18/passwords-part-1/) ([Part 2](https://crunchingnumbers.live/2016/12/03/passwords-part-2/))
-- [Sierpinski Shirt](https://crunchingnumbers.live/2016/11/13/sierpinski-shirt/)
-- [Braille in Modern World](https://crunchingnumbers.live/2016/06/07/braille-in-modern-world/)
-- [Solving Nonograms Using Compressive Sensing](https://crunchingnumbers.live/2016/02/20/solving-nonograms-with-compressive-sensing-part-1/) ([Part 2](https://crunchingnumbers.live/2016/02/28/solving-nonograms-with-compressive-sensing-part-2/), [Part 3](https://crunchingnumbers.live/2016/03/16/solving-nonograms-with-compressive-sensing-part-3/), [Part 4](https://crunchingnumbers.live/2016/03/24/solving-nonograms-with-compressive-sensing-part-4/))
-- [Find the Right Whale](https://crunchingnumbers.live/2016/02/09/find-the-right-whale/)
-- [Monte Carlo Simulations: How Big Is Your Heart?](https://crunchingnumbers.live/2016/02/05/monte-carlo-simulations-how-big-is-your-heart/)
-- [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra/)
-- [Monte Carlo Simulations: Buffon's Needle](https://crunchingnumbers.live/2016/02/01/monte-carlo-simulations-buffons-needle/)
-- [Monte Carlo Simulations: Penney's Game](https://crunchingnumbers.live/2016/01/28/monte-carlo-simulations-penneys-game/)
-- [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps/)
-- [To Infinity and Beyond](https://crunchingnumbers.live/2016/01/22/to-infinity-and-beyond/)
+- [p@55w0rd$](https://crunchingnumbers.live/2016/11/18/passwords-part-1) ([Part 2](https://crunchingnumbers.live/2016/12/03/passwords-part-2))
+- [Sierpinski Shirt](https://crunchingnumbers.live/2016/11/13/sierpinski-shirt)
+- [Braille in Modern World](https://crunchingnumbers.live/2016/06/07/braille-in-modern-world)
+- [Solving Nonograms Using Compressive Sensing](https://crunchingnumbers.live/2016/02/20/solving-nonograms-with-compressive-sensing-part-1) ([Part 2](https://crunchingnumbers.live/2016/02/28/solving-nonograms-with-compressive-sensing-part-2), [Part 3](https://crunchingnumbers.live/2016/03/16/solving-nonograms-with-compressive-sensing-part-3), [Part 4](https://crunchingnumbers.live/2016/03/24/solving-nonograms-with-compressive-sensing-part-4))
+- [Find the Right Whale](https://crunchingnumbers.live/2016/02/09/find-the-right-whale)
+- [Monte Carlo Simulations: How Big Is Your Heart?](https://crunchingnumbers.live/2016/02/05/monte-carlo-simulations-how-big-is-your-heart)
+- [Visualize Linear Algebra](https://crunchingnumbers.live/2016/02/03/visualize-linear-algebra)
+- [Monte Carlo Simulations: Buffon's Needle](https://crunchingnumbers.live/2016/02/01/monte-carlo-simulations-buffons-needle)
+- [Monte Carlo Simulations: Penney's Game](https://crunchingnumbers.live/2016/01/28/monte-carlo-simulations-penneys-game)
+- [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps)
+- [To Infinity and Beyond!](https://crunchingnumbers.live/2016/01/22/to-infinity-and-beyond)
