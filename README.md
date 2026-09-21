@@ -13,6 +13,9 @@ Unless I noted otherwise, I have written all code. Please cite [my blog](https:/
 
 ### 2026
 
+- [LSP-ember for Sublime Text](https://crunchingnumbers.live/2026/09/14/lsp-ember-for-sublime-text)
+- [Rescue Me: ember-website](https://crunchingnumbers.live/2026/09/08/rescue-me-ember-website)
+- [Migrating a WordPress Blog with Claude Code](https://crunchingnumbers.live/2026/08/07/migrating-a-wordpress-blog-with-claude-code)
 - [Responsive Images in Modern Ember](https://crunchingnumbers.live/2026/07/28/responsive-images-in-modern-ember)
 - [Codemod for Ignoring Lint Errors](https://crunchingnumbers.live/2026/04/27/codemod-for-ignoring-lint-errors)
 
@@ -45,11 +48,13 @@ Unless I noted otherwise, I have written all code. Please cite [my blog](https:/
 
 - [8 Lecture Notes](https://crunchingnumbers.live/2020/12/12/8-lecture-notes)
 - [CI with GitHub Actions for Ember Apps (Part 2)](https://crunchingnumbers.live/2020/08/31/ci-with-github-actions-for-ember-apps-part-2)
+- [Powering the Together Framework](https://crunchingnumbers.live/2020/08/31/powering-the-together-framework)
 - [3 Refactoring Techniques](https://crunchingnumbers.live/2020/08/08/3-refactoring-techniques)
 - [Container Queries: Cross-Resolution Testing](https://crunchingnumbers.live/2020/06/07/container-queries-cross-resolution-testing)
 - [Container Queries: Adaptive Images](https://crunchingnumbers.live/2020/06/03/container-queries-adaptive-images)
 - [Container Queries: Reimagined](https://crunchingnumbers.live/2020/06/01/container-queries-reimagined)
 - [CI with GitHub Actions for Ember Apps](https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps)
+- [How to Manage Conflicts: Decide](https://crunchingnumbers.live/2020/02/24/how-to-manage-conflicts-decide)
 - [Prototyping Apps with Ember Octane: Behind the Scenes](https://crunchingnumbers.live/2020/02/03/prototyping-apps-with-ember-octane-behind-the-scenes)
 - [Finding Books for Prisoners](https://crunchingnumbers.live/2020/01/15/finding-books-for-prisoners)
 
@@ -59,8 +64,12 @@ Unless I noted otherwise, I have written all code. Please cite [my blog](https:/
 - [Rewriting Apps in Ember Octane](https://crunchingnumbers.live/2019/12/23/rewriting-apps-in-ember-octane)
 - [Write Tests Like a Mathematician](https://crunchingnumbers.live/2019/08/04/write-tests-like-a-mathematician-part-1) ([Part 2](https://crunchingnumbers.live/2019/08/06/write-tests-like-a-mathematician-part-2), [Part 3](https://crunchingnumbers.live/2019/10/11/write-tests-like-a-mathematician-part-3))
 - [Topics in Computational Mechanics](https://crunchingnumbers.live/2019/06/05/topics-in-computational-mechanics-part-1) ([Part 2](https://crunchingnumbers.live/2019/06/16/topics-in-computational-mechanics-part-2), [Part 3](https://crunchingnumbers.live/2019/07/03/topics-in-computational-mechanics-part-3), [Part 4](https://crunchingnumbers.live/2019/07/07/topics-in-computational-mechanics-part-4), [Part 5](https://crunchingnumbers.live/2019/07/25/topics-in-computational-mechanics-part-5))
+- [#EmberJS2019: Build a Larger Community](https://crunchingnumbers.live/2019/05/26/emberjs2019-build-a-larger-community)
+- [Converse with Ease](https://crunchingnumbers.live/2019/05/22/converse-with-ease)
 - [3 Projects for Teaching Numerical Linear Algebra](https://crunchingnumbers.live/2019/04/14/3-projects-for-teaching-numerical-linear-algebra)
 - [Animation and Predictable Data Loading in Ember](https://crunchingnumbers.live/2019/04/02/animation-and-predictable-data-loading-in-ember)
+- [How to Manage Conflicts: Speak](https://crunchingnumbers.live/2019/03/11/how-to-manage-conflicts-speak)
+- [How to Manage Conflicts: Listen](https://crunchingnumbers.live/2019/03/05/how-to-manage-conflicts-listen)
 - [Nearley.js: When Regex Isn’t Enough](https://crunchingnumbers.live/2019/01/24/nearley-js-when-regex-isnt-enough)
 
 
@@ -73,6 +82,7 @@ Unless I noted otherwise, I have written all code. Please cite [my blog](https:/
 - [Use D3 with Ember](https://crunchingnumbers.live/2018/06/03/use-d3-with-ember)
 - [Lights Out](https://crunchingnumbers.live/2018/04/07/lights-out)
 - [Mai Retrospective](https://crunchingnumbers.live/2018/03/25/mai-retrospective)
+- [Hello JS World!](https://crunchingnumbers.live/2018/01/16/hello-js-world)
 
 
 ### 2017
@@ -98,4 +108,4 @@ Unless I noted otherwise, I have written all code. Please cite [my blog](https:/
 - [Monte Carlo Simulations: Buffon's Needle](https://crunchingnumbers.live/2016/02/01/monte-carlo-simulations-buffons-needle)
 - [Monte Carlo Simulations: Penney's Game](https://crunchingnumbers.live/2016/01/28/monte-carlo-simulations-penneys-game)
 - [Monte Carlo Simulations: Craps](https://crunchingnumbers.live/2016/01/24/monte-carlo-simulations-craps)
-- [To Infinity and Beyond](https://crunchingnumbers.live/2016/01/22/to-infinity-and-beyond)
+- [To Infinity and Beyond!](https://crunchingnumbers.live/2016/01/22/to-infinity-and-beyond)
